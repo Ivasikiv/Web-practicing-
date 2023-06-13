@@ -1,0 +1,23 @@
+{
+    "name": "PWA Sudent",
+    "short_name": "Stud PWA",
+    "theme_color": "rgb(191,222,249)",
+    "background_color": "rgb(255,255,255)",
+    "display": "standalone",
+    "orientation": "landscape",
+    "scope": "/",
+    "start_url": "/.",
+    "icons": [
+        {
+            "src": "/notif.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        },
+        {
+            "src": "/avatar.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+    ]
+
+  }

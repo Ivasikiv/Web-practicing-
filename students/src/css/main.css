@@ -1,0 +1,302 @@
+table, th, td {                 /* table, th, td - це теги, які використовуються для створення таблиць */
+    border: 1px solid;          /* border - властивість, яка встановлює рамку для елемента */
+    border-collapse: collapse;  /* border-collapse - властивість, яка встановлює, чи будуть рамки об'єднані в одну рамку (collapse - об'єднані) */
+    height: 50px;               /* height - властивість, яка встановлює висоту елемента */
+    /*display: grid;*/
+}
+
+table {                         /* table - це тег, який використовується для створення таблиць */              
+    width: 100%;                /* width - властивість, яка встановлює ширину елемента */
+}
+
+th {                            /* th - це тег, який використовується для створення заголовків таблиць */
+    height: 50px;
+    width: 1%;
+}
+
+td {                            /* td - це тег, який використовується для створення стовпців таблиць */
+    width: 1%;
+    text-align: center;         /* text-align - властивість, яка встановлює горизонтальне вирівнювання тексту */
+}
+
+aside {
+    margin-top: 100px;          /* margin-top - властивість, яка встановлює верхній відступ елемента */
+    height: 100%;               /* height - властивість, яка встановлює висоту елемента */
+    width: 160px;               /* width - властивість, яка встановлює ширину елемента */
+    position: fixed;            /* position - властивість, яка встановлює тип позиціонування елемента (fixed - елемент відноситься до вікна браузера) */
+    z-index: 1;                 /* z-index - властивість, яка встановлює порядок в якому елементи будуть відображатися */
+    top: 0;                     /* top - властивість, яка встановлює верхню межу елемента */
+    left: 0;                    /* left - властивість, яка встановлює ліву межу елемента */
+    background-color: white;  /* background-color - властивість, яка встановлює колір фону елемента */
+    overflow-x: hidden;         /* overflow-x - властивість, яка встановлює, чи буде відображатися горизонтальна прокрутка, коли елемент переповнюється */
+    padding-top: 20px;          /* padding-top - властивість, яка встановлює верхній відступ елемента */
+}
+
+main {
+    margin-left: 160px;  
+    padding: 0px 10px;
+}
+
+header {
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;  /* justify-content - властивість, яка встановлює горизонтальне вирівнювання елементів */
+}                                   /* space-between - елементи розташовуються по ширині контейнера з рівними відступами між ними */
+
+.name {
+    color: white;
+}
+
+.upper-left-part {
+    display: flex;                  /* display - властивість, яка встановлює тип відображення елемента (flex - елементи відображаються як блоки) */
+    justify-content: space-around;  /* space-around - елементи розташовуються по ширині контейнера з рівними відступами між ними та по краях */
+    margin-top: 5px;
+    margin-right: 3%;
+}
+
+ul {
+    margin: auto;
+    list-style-type: none;
+    height: 150px;
+}
+
+li {
+    height: 25px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;     /* text-decoration - властивість, яка встановлює декоративні елементи тексту (none - відсутні) */
+}
+
+.div-with-plus {
+    display: flex;
+    justify-content:space-between;
+}
+
+.div-with-btns {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.notification {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    position: relative;         /* position - властивість, яка встановлює тип позиціонування елемента (relative - елемент відноситься до свого нормального положення) */
+    display: inline-block;
+    border-radius: 1px;         /* border-radius - властивість, яка встановлює радіус кутів елемента */
+    margin-right: 0;
+}
+
+/*.notification:hover {
+    background: red;
+}*/
+
+.notification .point {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+
+.point {
+    display:none;
+
+    animation-name: not;                   /* animation-name - властивість, яка встановлює назву анімації (not - назва анімації) */
+    animation-duration: 3s;                /* animation-duration - властивість, яка встановлює тривалість анімації (3s - тривалість анімації) */
+    animation-iteration-count: infinite;   /* animation-iteration-count - властивість, яка встановлює кількість повторень анімації (infinite - анімація повторюється безліч разів) */
+}
+
+@keyframes not {                           /* @keyframes - властивість, яка встановлює анімацію */
+    from{background-color: red;}         /* from - початковий стан елемента */
+    to {background-color: black;}        /* to - кінцевий стан елемента */
+}
+
+.equalize-imgs {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+.notification-newWindow {
+    display: none;
+    position: fixed;
+    z-index: 5;                 /* z-index - властивість, яка встановлює порядок відображення елемента (1 - елемент відображається над іншими) */
+    left: 82%;
+    top: 100px;
+    width: 17%;
+    height: 10%;
+    overflow: hidden;           /* overflow - властивість, яка встановлює поведінку елемента при переповненні (hidden - вміст, що переповнює контейнер, приховується) */
+    background-color: white;
+    border: 1px solid;          /* border - властивість, яка встановлює рамку елемента (1px solid - товщина рамки, стиль рамки) */
+}
+
+.menu-option {
+    display: flex;
+    margin-top: 5px;
+    margin-right: 3%;;
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.profile {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 87%;
+    top: 100px;
+    width: 12%;
+    height: 8%;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    padding-bottom: 1%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    margin-top: 3%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 1%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    padding-right: 3px;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    max-width: 500px;
+    padding-left: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.add-row, .ok, .cancel {
+    color: black;
+    margin-top: 15px;
+    padding: 8px 16px;
+    margin-right: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+:where(.add-row, .ok, .cancel, .addbtn):hover {
+    background-color: #d4d4d4e6;
+}
+
+.add-btn {
+    color: black;
+    padding: 8px 8px;
+    margin-top: 34px;
+    float: right;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.hidden {
+    display:none;
+}
+
+.warning {
+    z-index: 1;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 3%;
+    width: 400px;
+    height: 200px;
+}
+
+.warning-header {
+    border-bottom: 3px solid gray;
+}
+
+.warning-header > div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.warningtbn {
+    color: black;
+    margin-top: 15px;
+    padding: 8px 16px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.status {
+    background-color: green;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    border: none;
+}
